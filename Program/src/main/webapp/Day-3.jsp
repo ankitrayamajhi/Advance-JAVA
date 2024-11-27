@@ -80,10 +80,22 @@
             text-decoration: underline;
         }
     </style>
+    
+
+     
+     
 
     <div class="form-container">
         <h2>Login</h2>
-        
+           <%
+    String message= request.getParameter("message");
+    if(message != null){
+    
+    %>
+    <font color="red"><%= message %></font>
+    <% 
+    }
+    %> 
       
         <form method="post" action="Day-3-logincheck.jsp">
             <label for="name">User Name:</label>
