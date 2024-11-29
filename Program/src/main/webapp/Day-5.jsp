@@ -25,6 +25,7 @@ User Name:<input type="text" name="name" value="<%=name %>" ><br>
 Password:<input type="password" name="password"><br>
 
 Remember<input type="checkbox" name="remember" value="Ok">
+<input type = "submit" value = "submit">
 <br>
 <br>
 
