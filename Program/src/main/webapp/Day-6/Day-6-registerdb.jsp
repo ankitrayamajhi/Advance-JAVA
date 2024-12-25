@@ -5,7 +5,7 @@
 	String email=request.getParameter("email");
 	try {
 	Class.forName("com.mysql.jdbc.Driver");
-	Connection con=DriverManager.getConnection("jdbc:mysql://localhost/test","root","root");
+	Connection con=DriverManager.getConnection("jdbc:mysql://localhost/test","root","");
 	PreparedStatement pre=con.prepareStatement("insert into user values(?,?,?)");
 	pre.setString(1,name);
 	pre.setString(2,password);
